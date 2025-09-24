@@ -3,19 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
 
-const gcalTemplateUrl = (() => {
-  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
-  const text = "&text=" + encodeURIComponent("Consulta inicial — ConsulTech");
-  const details =
-    "&details=" +
-    encodeURIComponent(
-      "Reunión de diagnóstico sin costo. Tema: necesidades tecnológicas de su PyME."
-    );
-  const location = "&location=" + encodeURIComponent("Google Meet");
-  return base + text + details + location;
-})();
+const bookingUrl = "https://calendar.app.google/uxURa1WvWaK4QckR9";
 
-const whatsappNumber = "+5491169811106";
+const whatsappNumber = "5491169811106";
 const whatsappMsg = encodeURIComponent(
   "Hola, me gustaría coordinar una consulta inicial. ¿Tienen disponibilidad?"
 );
@@ -54,9 +44,10 @@ export function Contact() {
 
               <Button asChild className="w-full" size="lg">
                 <a
-                  href={gcalTemplateUrl}
+                  href={bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Abrir agenda en Google Calendar"
                 >
                   <Calendar className="w-4 h-4 mr-2" />
                   Agendar Consulta
@@ -71,7 +62,6 @@ export function Contact() {
               </Button>
             </CardContent>
           </Card>
-
           <Card className="shadow-lg rounded-2xl">
             <CardHeader>
               <CardTitle>Información de Contacto</CardTitle>
@@ -110,7 +100,7 @@ export function Contact() {
                         aria-label="Contactar por WhatsApp"
                         title="Contactar por WhatsApp"
                       >
-                        +54 11 1234-5678
+                        +54 9 11 6981-1106
                       </a>
                     </p>
                   </div>
