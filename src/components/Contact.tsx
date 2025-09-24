@@ -3,6 +3,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
 
+const gcalTemplateUrl = (() => {
+  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+  const text = "&text=" + encodeURIComponent("Consulta inicial — ConsulTech");
+  const details =
+    "&details=" +
+    encodeURIComponent(
+      "Reunión de diagnóstico sin costo. Tema: necesidades tecnológicas de su PyME."
+    );
+  const location = "&location=" + encodeURIComponent("Google Meet");
+  return base + text + details + location;
+})();
+
+const whatsappNumber = "+5491169811106";
+const whatsappMsg = encodeURIComponent(
+  "Hola, me gustaría coordinar una consulta inicial. ¿Tienen disponibilidad?"
+);
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
+
 export function Contact() {
   return (
     <section id="contacto" className="py-16 lg:py-24">
@@ -15,58 +33,90 @@ export function Contact() {
             ¿Listo para Transformar su PyME?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comencemos con una consulta gratuita para evaluar las necesidades tecnológicas de su empresa.
+            Comencemos con una consulta gratuita para evaluar las necesidades
+            tecnológicas de su empresa.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <Card className="shadow-lg">
+          <Card className="shadow-lg rounded-2xl">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
+              <CardTitle className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5 text-primary" />
-                <span>Consulta Inicial Gratuita</span>
+                <span>Agende una Reunión de Diagnóstico</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Analicemos juntos las oportunidades de mejora en su empresa. 
-                Sin compromiso, evaluamos su situación actual y identificamos 
-                las soluciones más adecuadas.
+                Coordine una videollamada de 30 minutos para analizar su
+                situación actual y definir próximos pasos. Sin compromiso.
               </p>
-              <Button className="w-full" size="lg">
-                <Calendar className="w-4 h-4 mr-2" />
-                Agendar Consulta
+
+              <Button asChild className="w-full" size="lg">
+                <a
+                  href={gcalTemplateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Agendar Consulta
+                </a>
+              </Button>
+
+              <Button variant="outline" asChild className="w-full">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  Coordinar por WhatsApp
+                </a>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg">
+          <Card className="shadow-lg rounded-2xl">
             <CardHeader>
               <CardTitle>Información de Contacto</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center gap-6">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p>alfredo.mana@consultech.com</p>
+                    <p>
+                      <a
+                        href="mailto:alfredo.mana@consultech.com"
+                        className="hover:underline"
+                      >
+                        alfredo.mana@consultech.com
+                      </a>
+                    </p>
                   </div>
                 </div>
-                
-                <div className="flex items-center space-x-3">
+
+                <div className="flex items-center gap-6">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Teléfono</p>
-                    <p>+54 11 1234-5678</p>
+                    <p>
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                        aria-label="Contactar por WhatsApp"
+                        title="Contactar por WhatsApp"
+                      >
+                        +54 11 1234-5678
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="pt-4 border-t">
                 <p className="text-sm text-muted-foreground">
                   Respuesta garantizada en menos de 24 horas

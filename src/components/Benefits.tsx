@@ -51,7 +51,7 @@ export function Benefits() {
           </p>
         </div>
 
-        <div className="flex flex-wrap -mx-3">
+        <div className="flex flex-wrap-mx-3" style={{ overflowX: "auto" }}>
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (

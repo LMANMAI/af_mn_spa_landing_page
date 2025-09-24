@@ -1,0 +1,53 @@
+.valuesWrap {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 72rem;
+}
+
+.valuesIntro {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.valuesGrid {
+  margin-top: 1.5rem;
+  display: grid !important;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  text-align: left !important;
+}
+
+@media (min-width: 640px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.valueItem {
+  min-width: 0;
+}
+
+.valueItemTitle {
+  font-weight: 600;
+  color: rgb(15 23 42);
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.valueItemText {
+  margin: 0;
+  color: rgb(71 85 105);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
