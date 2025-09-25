@@ -1,3 +1,45 @@
+/* Services.module.css */
+
+.section {
+  padding: 4rem 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background: rgb(241 245 249);
+  color: rgb(51 65 85);
+}
+
+.title {
+  margin: 0.75rem 0 0.25rem;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+.lead {
+  margin: 0.5rem auto 0;
+  max-width: 48rem;
+  color: rgb(71 85 105);
+  font-size: 1.125rem;
+}
+
+/* Valores */
 .valuesWrap {
   margin-top: 1.5rem;
   margin-left: auto;
@@ -5,7 +47,6 @@
   width: 100%;
   max-width: 72rem;
 }
-
 .valuesIntro {
   text-align: center;
   font-size: 1rem;
@@ -20,13 +61,11 @@
   padding: 0;
   text-align: left !important;
 }
-
 @media (min-width: 640px) {
   .valuesGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 @media (min-width: 1024px) {
   .valuesGrid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -37,17 +76,174 @@
 .valueItem {
   min-width: 0;
 }
-
 .valueItemTitle {
   font-weight: 600;
   color: rgb(15 23 42);
   margin: 0 0 0.25rem 0;
   line-height: 1.2;
 }
-
 .valueItemText {
   margin: 0;
   color: rgb(71 85 105);
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+/* Carrusel: SIEMPRE horizontal (desktop incluido) */
+.scrollerRegion {
+  position: relative;
+}
+.scrollerRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* nunca wrap, siempre overflow-x y snap */
+.scroller {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+}
+@media (min-width: 640px) {
+  .slide {
+    width: 340px;
+  }
+}
+@media (min-width: 768px) {
+  .slide {
+    width: 360px;
+  }
+}
+
+/* Deja visibles las flechas en desktop (sin media query) */
+.edgeLeft,
+.edgeRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  pointer-events: none;
+}
+.edgeLeft {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.edgeRight {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+.arrowLeft {
+  left: 4px;
+}
+.arrowRight {
+  right: 4px;
+}
+.arrow:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Card */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+.cardHeader {
+  padding: 20px 20px 8px 20px;
+}
+.iconBox {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #ecfdf5;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardTitle {
+  font-size: 20px;
+  line-height: 1.25;
+  color: rgb(15 23 42);
+  margin: 0;
+}
+.cardDesc {
+  margin-top: 4px;
+  color: rgb(71 85 105);
+  font-size: 0.95rem;
+}
+.cardContent {
+  padding: 0 20px 20px 20px;
+}
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.bullet {
+  margin-top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #10b981;
+  flex-shrink: 0;
+}
+.pointText {
+  font-size: 0.9rem;
+  color: rgb(71 85 105);
 }
