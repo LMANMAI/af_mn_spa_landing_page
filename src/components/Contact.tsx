@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
+import styles from "../styles/Contact.module.css";
 
 const bookingUrl = "https://calendar.app.google/uxURa1WvWaK4QckR9";
 
@@ -13,71 +14,72 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
 
 export function Contact() {
   return (
-    <section id="contacto" className="py-16 lg:py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center space-y-4 mb-16">
-          <Badge variant="secondary" className="text-sm px-3 py-1">
+    <section id="contacto" className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <Badge variant="secondary" className={styles.badge}>
             Conectemos
           </Badge>
-          <h2 className="text-3xl lg:text-4xl">
-            ¿Listo para Transformar su PyME?
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className={styles.title}>¿Listo para Transformar su PyME?</h2>
+          <p className={styles.lead}>
             Comencemos con una consulta gratuita para evaluar las necesidades
             tecnológicas de su empresa.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <Card className="shadow-lg rounded-2xl">
+        <div className={styles.grid}>
+          <Card className={styles.card}>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <MessageCircle className="w-5 h-5 text-primary" />
+              <CardTitle className={styles.cardTitle}>
+                <MessageCircle size={20} className={styles.titleIcon} />
                 <span>Agende una Reunión de Diagnóstico</span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
+            <CardContent className={styles.cardBody}>
+              <p className={styles.muted}>
                 Coordine una videollamada de 30 minutos para analizar su
                 situación actual y definir próximos pasos. Sin compromiso.
               </p>
 
-              <Button asChild className="w-full" size="lg">
+              <Button asChild className={styles.btnPrimary}>
                 <a
                   href={bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Abrir agenda en Google Calendar"
                 >
-                  <Calendar className="w-4 h-4 mr-2" />
+                  <Calendar size={16} className={styles.btnIcon} />
                   Agendar Consulta
                 </a>
               </Button>
 
-              <Button variant="outline" asChild className="w-full">
+              {/* <Button variant="outline" asChild className={styles.btnOutline}>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <MessageCircle size={16} className={styles.btnIcon} />
                   Coordinar por WhatsApp
                 </a>
-              </Button>
+              </Button> */}
             </CardContent>
           </Card>
-          <Card className="shadow-lg rounded-2xl">
+
+          <Card className={styles.card}>
             <CardHeader>
-              <CardTitle>Información de Contacto</CardTitle>
+              <CardTitle className={styles.cardTitleOnly}>
+                Información de Contacto
+              </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-6">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-primary" />
+            <CardContent className={styles.cardBody}>
+              <div className={styles.stack}>
+                <div className={styles.row}>
+                  <div className={styles.iconBox}>
+                    <Mail size={20} />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className={styles.smallMuted}>Email</p>
                     <p>
                       <a
                         href="mailto:alfredo.mana@consultech.com"
-                        className="hover:underline"
+                        className={styles.link}
                       >
                         alfredo.mana@consultech.com
                       </a>
@@ -85,18 +87,18 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-6">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-primary" />
+                <div className={styles.row}>
+                  <div className={styles.iconBox}>
+                    <Phone size={20} />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Teléfono</p>
+                    <p className={styles.smallMuted}>Teléfono</p>
                     <p>
                       <a
                         href={whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:underline"
+                        className={styles.link}
                         aria-label="Contactar por WhatsApp"
                         title="Contactar por WhatsApp"
                       >
@@ -107,8 +109,8 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t">
-                <p className="text-sm text-muted-foreground">
+              <div className={styles.divider}>
+                <p className={styles.smallMuted}>
                   Respuesta garantizada en menos de 24 horas
                 </p>
               </div>

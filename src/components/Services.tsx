@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: Cog,
-    title: "Consultoría y Estrategia Tecnológica",
+    title: "Asesoría y Estrategia Tecnológica",
     description: "Diagnóstico de la infraestructura y sistemas actuales.",
     points: [
       "Definición de una estrategia digital adaptada a las necesidades del negocio",
@@ -100,7 +100,7 @@ export function Services() {
           <span className={styles.badge}>Servicios Especializados</span>
           <h2 className={styles.title}>Soluciones Tecnológicas Integrales</h2>
           <p className={styles.lead}>
-            Ofrezco servicios completos de consultoría tecnológica diseñados
+            Ofrezco servicios completos de asesoría tecnológica diseñados
             específicamente para las necesidades de las PyMEs.
           </p>
 

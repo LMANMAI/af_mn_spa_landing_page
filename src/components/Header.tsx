@@ -1,41 +1,42 @@
-import { Button } from "./ui/button";
+// src/components/Header.tsx
+import styles from "../styles/Header.module.css";
+import { PropsWithChildren } from "react";
 import logoIcon from "../assets/thumbnail_Solo mano.png";
-import logoText from "../assets/thumbnail_Solo nombre.png";
+
+function CTAButton({ children, href }: PropsWithChildren<{ href: string }>) {
+  return (
+    <a href={href} className={styles.ctaBtn}>
+      {children}
+    </a>
+  );
+}
 
 export function Header() {
   return (
-    <header className="w-full border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <img src={logoIcon} alt="Logo" className="w-10 h-10" />
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.brand}>
+          <img src={logoIcon} alt="Logo" className={styles.logo} />
           <div>
-            <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-semibold text-[#1e3a8a]">
-                Alfredo Mana
-              </h1>
-              <img src={logoText} alt="Para PyMEs" className="h-6" />
-            </div>
-            <p className="text-muted-foreground text-sm">
-              Consultoría Tecnológica
-            </p>
+            <h1 className={styles.title}>Alfredo Mana</h1>
+            <p className={styles.subtitle}>Asesoría Tecnológica</p>
           </div>
         </div>
-        <nav className="hidden md:flex items-center space-x-6">
-          <a href="#servicios" className="hover:text-primary transition-colors">
+
+        <nav className={styles.nav}>
+          <a href="#biografia" className={styles.navLink}>
+            Biografía
+          </a>
+          <a href="#servicios" className={styles.navLink}>
             Servicios
           </a>
-          <a
-            href="#beneficios"
-            className="hover:text-primary transition-colors"
-          >
+          <a href="#beneficios" className={styles.navLink}>
             Beneficios
           </a>
-          <a href="#modelo" className="hover:text-primary transition-colors">
+          <a href="#modelo" className={styles.navLink}>
             Modelo de Trabajo
           </a>
-          <Button asChild>
-            <a href="#contacto">Contacto</a>
-          </Button>
+          <CTAButton href="#contacto">Contacto</CTAButton>
         </nav>
       </div>
     </header>

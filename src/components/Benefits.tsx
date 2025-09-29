@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 import {
   TrendingUp,
   DollarSign,
@@ -6,6 +5,7 @@ import {
   Lightbulb,
   HeartHandshake,
 } from "lucide-react";
+import styles from "../styles/Benefits.module.css";
 
 const benefits = [
   {
@@ -38,35 +38,31 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="py-16 lg:py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center space-y-4 mb-16">
-          <Badge variant="secondary" className="text-sm px-3 py-1">
-            Valor Agregado
-          </Badge>
-          <h2 className="text-3xl lg:text-4xl">Beneficios para su Empresa</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section id="beneficios" className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <span className={styles.badge}>Valor Agregado</span>
+          <h2 className={styles.title}>Beneficios para su Empresa</h2>
+          <p className={styles.lead}>
             Resultados concretos que transformarán la manera en que su PyME
             opera y compite en el mercado.
           </p>
         </div>
 
-        <div className="flex flex-wrap-mx-3" style={{ overflowX: "auto" }}>
+        <ul className={styles.grid}>
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-3 mb-8">
-                <div className="h-full text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                    <Icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-lg leading-tight">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
+              <li key={index} className={styles.card}>
+                <div className={styles.iconBox}>
+                  <Icon size={32} />
                 </div>
-              </div>
+                <h3 className={styles.cardTitle}>{benefit.title}</h3>
+                <p className={styles.cardDesc}>{benefit.description}</p>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

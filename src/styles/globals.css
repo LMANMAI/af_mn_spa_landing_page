@@ -186,4 +186,14 @@
 
 html {
   font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --topbar-h: 36px;
+  --header-h: 72px;
+}
+
+.anchor {
+  scroll-margin-top: calc(var(--topbar-h) + var(--header-h) + 12px);
 }

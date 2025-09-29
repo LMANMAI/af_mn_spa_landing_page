@@ -1,4 +1,5 @@
 import styles from "../styles/Footer.module.css";
+import { Linkedin, Instagram, MessageCircle, Music } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className={styles.brand}>Alfredo Mana</h3>
             <p className={styles.muted}>
-              Consultoría Tecnológica especializada en PyMEs. Transformando
+              Asesoría Tecnológica especializada en PyMEs. Transformando
               empresas a través de la tecnología.
             </p>
           </div>
@@ -30,20 +31,22 @@ export function Footer() {
               <li>
                 <a
                   className={styles.socialLink}
-                  href="https://www.linkedin.com/in/alfredomana"
+                  href="https://www.linkedin.com/in/alfredomana/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <Linkedin className={styles.socialIcon} />
                   Linkedin
                 </a>
               </li>
               <li>
                 <a
                   className={styles.socialLink}
-                  href="https://www.instagram.com/alfredomana"
+                  href="https://www.instagram.com/alfredomana.ok/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <Instagram className={styles.socialIcon} />
                   Instagram
                 </a>
               </li>
@@ -54,7 +57,19 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <MessageCircle className={styles.socialIcon} />
                   Canal de WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.socialLink}
+                  href="https://open.spotify.com/show/0czP3gyaZXgFMYhQ6j4nmc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Music className={styles.socialIcon} />
+                  Spotify
                 </a>
               </li>
             </ul>
@@ -63,7 +78,7 @@ export function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.finePrint}>
-            © 2024 Alfredo Mana - Consultoría Tecnológica. Todos los derechos
+            © 2024 Alfredo Mana - Asesoría Tecnológica. Todos los derechos
             reservados.
           </p>
         </div>
