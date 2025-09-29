@@ -1,5 +1,5 @@
 import styles from "../styles/Footer.module.css";
-import { Linkedin, Instagram, MessageCircle, Music } from "lucide-react";
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaSpotify } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -35,7 +35,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className={styles.socialIcon} />
+                  <FaLinkedin className={styles.socialIcon} />
                   Linkedin
                 </a>
               </li>
@@ -46,7 +46,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Instagram className={styles.socialIcon} />
+                  <FaInstagram className={styles.socialIcon} />
                   Instagram
                 </a>
               </li>
@@ -57,7 +57,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className={styles.socialIcon} />
+                  <FaWhatsapp className={styles.socialIcon} />
                   Canal de WhatsApp
                 </a>
               </li>
@@ -68,7 +68,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Music className={styles.socialIcon} />
+                  <FaSpotify className={styles.socialIcon} />
                   Spotify
                 </a>
               </li>
