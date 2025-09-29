@@ -25,7 +25,7 @@ export function Header() {
 
         <nav className={styles.nav}>
           <a href="#biografia" className={styles.navLink}>
-            Biografía
+            Sobre mí
           </a>
           <a href="#servicios" className={styles.navLink}>
             Servicios
