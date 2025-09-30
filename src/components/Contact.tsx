@@ -4,7 +4,7 @@ import { Badge } from "./ui/badge";
 import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
 import styles from "../styles/Contact.module.css";
 
-const bookingUrl = "https://calendar.app.google/uxURa1WvWaK4QckR9";
+const bookingUrl = "https://calendar.app.google/xtKHuv7n5ogVZVcT7";
 
 const whatsappNumber = "5491169811106";
 const whatsappMsg = encodeURIComponent(
