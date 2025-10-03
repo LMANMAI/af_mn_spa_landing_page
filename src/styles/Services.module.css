@@ -251,3 +251,33 @@
   font-size: 0.9rem;
   color: rgb(71 85 105);
 }
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  margin: 10px 0px;
+  background-color: #1f3b8a;
+  border: 1px solid #1f3b8a;
+  color: #ffffff;
+
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: filter 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ctaButton:hover {
+  filter: brightness(0.95);
+}
+
+.ctaButton:active {
+  transform: translateY(1px);
+}
+
+.ctaButton:focus-visible {
+  outline: 2px solid #1f3b8a;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(31, 59, 138, 0.15);
+}

@@ -20,7 +20,7 @@ export function Hero() {
             </p>
 
             <p className={styles.body}>
-              Mi objetivo es acompañar a su organización en la selección,
+              Mi objetivo es acompañar a tu empresa y tu equipo en la selección,
               implementación y optimización de herramientas de gestión (ERP, CRM
               u otros sistemas), asegurando que la inversión tecnológica se
               traduzca en mayor eficiencia, seguridad y competitividad.

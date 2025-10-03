@@ -20,7 +20,7 @@ export function AboutMe() {
             <h2 className={styles.title}>Sobre mí</h2>
 
             <p className={styles.body}>
-              Soy Alfredo Mana, Analista de Sistemas y Consultor en Informática,
+              Soy Alfredo Mana, analista de sistemas y asesor en informática,
               especializado en la implementación de ERP, CRM y soluciones
               digitales. A lo largo de mi trayectoria trabajé en sectores como
               consumo masivo, transporte, logística, producción y comercio, lo

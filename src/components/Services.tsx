@@ -76,12 +76,10 @@ export function Services() {
     const el = scrollerRef.current;
     if (!el) return;
     const onScroll = () => updateArrows();
-    el.addEventListener("scroll", onScroll, {
-      passive: true,
-    } as AddEventListenerOptions);
+    el.addEventListener("scroll", onScroll as EventListener, { passive: true });
     window.addEventListener("resize", updateArrows);
     return () => {
-      el.removeEventListener("scroll", onScroll as any);
+      el.removeEventListener("scroll", onScroll as EventListener);
       window.removeEventListener("resize", updateArrows);
     };
   }, []);
@@ -100,9 +98,20 @@ export function Services() {
           <span className={styles.badge}>Servicios Especializados</span>
           <h2 className={styles.title}>Soluciones Tecnológicas Integrales</h2>
           <p className={styles.lead}>
-            Ofrezco servicios completos de asesoría tecnológica diseñados
-            específicamente para las necesidades de las PyMEs.
+            Asesoría tecnológica diseñada específicamente para que tu PyME y tu
+            equipo ganen tiempo.
           </p>
+
+          {/* CTA a #contacto */}
+          <div className={styles.ctaRow}>
+            <a
+              href="#contacto"
+              aria-label="Agendar Consulta - ir a la sección de contacto"
+              className={styles.ctaButton}
+            >
+              Solicitar propuesta
+            </a>
+          </div>
 
           <div className={styles.valuesWrap}>
             <p className={styles.valuesIntro}>
@@ -175,6 +184,7 @@ export function Services() {
                         <h3 className={styles.cardTitle}>{service.title}</h3>
                         <p className={styles.cardDesc}>{service.description}</p>
                       </div>
+
                       <div className={styles.cardContent}>
                         <ul className={styles.points}>
                           {service.points.map((point, i) => (
@@ -184,6 +194,13 @@ export function Services() {
                             </li>
                           ))}
                         </ul>
+
+                        {/* CTA por tarjeta (opcional). Descomenta si lo querés. */}
+                        {/* <div className={styles.cardCtaWrap}>
+                          <a href="#contacto" className={styles.cardCtaLink} aria-label={`Consultar sobre: ${service.title}`}>
+                            Consultar este servicio
+                          </a>
+                        </div> */}
                       </div>
                     </div>
                   </div>

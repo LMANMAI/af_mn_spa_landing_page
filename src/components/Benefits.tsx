@@ -9,9 +9,9 @@ import styles from "../styles/Benefits.module.css";
 
 const benefits = [
   {
-    icon: DollarSign,
-    title: "Optimización de recursos y reducción de costos",
-    description: "Maximice su inversión tecnológica con soluciones eficientes",
+    icon: Lightbulb,
+    title: "Innovación y actualización constante",
+    description: "Manténgase competitivo frente a los cambios del mercado",
   },
   {
     icon: TrendingUp,
@@ -20,19 +20,19 @@ const benefits = [
       "Procesos más ágiles que impulsan el crecimiento de su empresa",
   },
   {
-    icon: Shield,
-    title: "Seguridad en la gestión de la información",
-    description: "Protección integral de sus datos críticos empresariales",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovación y actualización constante",
-    description: "Manténgase competitivo frente a los cambios del mercado",
+    icon: DollarSign,
+    title: "Optimización de recursos y reducción de costos",
+    description: "Maximice su inversión tecnológica con soluciones eficientes",
   },
   {
     icon: HeartHandshake,
     title: "Acompañamiento estratégico y soporte continuo",
     description: "Relación de largo plazo para su crecimiento sostenido",
+  },
+  {
+    icon: Shield,
+    title: "Seguridad en la gestión de la información",
+    description: "Protección integral de sus datos críticos empresariales",
   },
 ];
 
@@ -47,6 +47,15 @@ export function Benefits() {
             Resultados concretos que transformarán la manera en que su PyME
             opera y compite en el mercado.
           </p>
+          <div className={styles.ctaRow}>
+            <a
+              href="#contacto"
+              aria-label="Agendar Consulta - ir a la sección de contacto"
+              className={styles.ctaButton}
+            >
+              Quiero estos beneficios en mi PyME
+            </a>
+          </div>
         </div>
 
         <ul className={styles.grid}>

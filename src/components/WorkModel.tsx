@@ -6,11 +6,12 @@ export function WorkModel() {
     <section id="modelo" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.badge}>Metodología</span>
+          <span className={styles.badge}>Cómo trabajo</span>
           <h2 className={styles.title}>Modelo de Trabajo</h2>
           <p className={styles.lead}>
-            Un enfoque flexible y transparente adaptado a la realidad de cada
-            PyME.
+            Escucho tus necesidades, detecto los puntos críticos y diseño un
+            plan claro y a tu medida para convertirlos en oportunidades. Con un
+            enfoque flexible y transparente adaptado a la realidad de cada PyME.
           </p>
         </div>
 
@@ -73,6 +74,15 @@ export function WorkModel() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className={styles.ctaRow}>
+            <a
+              href="#contacto"
+              aria-label="Agendar Consulta - ir a la sección de contacto"
+              className={styles.ctaButton}
+            >
+              Quiero aplicar este modelo
+            </a>
           </div>
         </div>
       </div>

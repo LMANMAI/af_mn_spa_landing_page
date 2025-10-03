@@ -37,8 +37,8 @@ export function Contact() {
             </CardHeader>
             <CardContent className={styles.cardBody}>
               <p className={styles.muted}>
-                Coordine una videollamada de 30 minutos para analizar su
-                situación actual y definir próximos pasos. Sin compromiso.
+                Coordine una videollamada de 60 minutos para analizar su
+                situación actual y definir próximos pasos.
               </p>
 
               <Button asChild className={styles.btnPrimary}>
@@ -81,7 +81,7 @@ export function Contact() {
                         href="mailto:alfredo.mana@consultech.com"
                         className={styles.link}
                       >
-                        alfredo.mana@consultech.com
+                        alfredomana@gmail.com
                       </a>
                     </p>
                   </div>

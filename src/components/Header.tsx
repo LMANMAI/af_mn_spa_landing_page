@@ -24,15 +24,16 @@ export function Header() {
         </div>
 
         <nav className={styles.nav}>
-          <a href="#biografia" className={styles.navLink}>
-            Sobre mí
+          <a href="#beneficios" className={styles.navLink}>
+            Beneficios
           </a>
           <a href="#servicios" className={styles.navLink}>
             Servicios
           </a>
-          <a href="#beneficios" className={styles.navLink}>
-            Beneficios
+          <a href="#biografia" className={styles.navLink}>
+            Sobre mí
           </a>
+
           <a href="#modelo" className={styles.navLink}>
             Modelo de Trabajo
           </a>
