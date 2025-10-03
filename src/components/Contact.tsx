@@ -22,8 +22,8 @@ export function Contact() {
           </Badge>
           <h2 className={styles.title}>¿Listo para Transformar su PyME?</h2>
           <p className={styles.lead}>
-            Comencemos con una consulta gratuita para evaluar las necesidades
-            tecnológicas de su empresa.
+            Demos el primer paso juntos para identificar sus necesidades
+            tecnológicas y diseñar un plan a medida para su empresa.
           </p>
         </div>
 

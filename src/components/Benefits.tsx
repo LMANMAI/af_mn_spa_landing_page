@@ -17,22 +17,22 @@ const benefits = [
     icon: TrendingUp,
     title: "Mejora en la eficiencia y productividad operativa",
     description:
-      "Procesos más ágiles que impulsan el crecimiento de su empresa",
+      "Procesos más ágiles que impulsan el crecimiento de tu empresa",
   },
   {
     icon: DollarSign,
     title: "Optimización de recursos y reducción de costos",
-    description: "Maximice su inversión tecnológica con soluciones eficientes",
+    description: "Maximiza tu inversión tecnológica con soluciones eficientes",
   },
   {
     icon: HeartHandshake,
     title: "Acompañamiento estratégico y soporte continuo",
-    description: "Relación de largo plazo para su crecimiento sostenido",
+    description: "Relación de largo plazo para tu crecimiento sostenido",
   },
   {
     icon: Shield,
     title: "Seguridad en la gestión de la información",
-    description: "Protección integral de sus datos críticos empresariales",
+    description: "Protección integral de tus datos críticos empresariales",
   },
 ];
 
@@ -42,9 +42,9 @@ export function Benefits() {
       <div className={styles.container}>
         <div className={styles.header}>
           <span className={styles.badge}>Valor Agregado</span>
-          <h2 className={styles.title}>Beneficios para su Empresa</h2>
+          <h2 className={styles.title}>Beneficios para tu Empresa</h2>
           <p className={styles.lead}>
-            Resultados concretos que transformarán la manera en que su PyME
+            Resultados concretos que transformarán la manera en que tu PyME
             opera y compite en el mercado.
           </p>
           <div className={styles.ctaRow}>
