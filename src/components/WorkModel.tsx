@@ -47,7 +47,7 @@ export function WorkModel() {
                   <h4 className={styles.itemTitle}>Adaptabilidad</h4>
                   <p className={styles.itemText}>
                     Soluciones personalizadas según las necesidades específicas
-                    de su empresa
+                    de tu empresa
                   </p>
                 </div>
 

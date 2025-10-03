@@ -22,8 +22,8 @@ export function Contact() {
           </Badge>
           <h2 className={styles.title}>¿Listo para Transformar tu PyME?</h2>
           <p className={styles.lead}>
-            Demos el primer paso juntos para identificar sus necesidades
-            tecnológicas y diseñar un plan a medida para su empresa.
+            Demos el primer paso juntos para identificar tus necesidades
+            tecnológicas y diseñar un plan a medida para tu empresa.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function Contact() {
             </CardHeader>
             <CardContent className={styles.cardBody}>
               <p className={styles.muted}>
-                Coordine una videollamada de 60 minutos para analizar su
+                Coordine una videollamada de 60 minutos para analizar tu
                 situación actual y definir próximos pasos.
               </p>
 
