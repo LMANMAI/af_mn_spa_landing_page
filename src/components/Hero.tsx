@@ -10,20 +10,19 @@ export function Hero() {
         <div className={styles.grid}>
           <div className={styles.textCol}>
             <h1 className={styles.title}>
-              Transformación Digital para{" "}
-              <span className={styles.titleEm}>PyMEs</span>
+              Transformación Digital para tu{" "}
+              <span className={styles.titleEm}>PyME</span>
             </h1>
 
             <p className={styles.lead}>
-              Mi nombre es <strong>Alfredo Mana</strong> y me especializo en
-              asesoría tecnológica para Micro, Pequeñas y Medianas Empresas.
+              Hago que la tecnología trabaje para vos, no al revés
             </p>
 
             <p className={styles.body}>
-              Mi objetivo es acompañar a tu empresa y tu equipo en la selección,
-              implementación y optimización de herramientas de gestión (ERP, CRM
-              u otros sistemas), asegurando que la inversión tecnológica se
-              traduzca en mayor eficiencia, seguridad y competitividad.
+              Mi objetivo es acompañar a tu empresa y tu equipo a su
+              organización en la selección, implementación y optimización de
+              herramientas de gestión, asegurando que la inversión tecnológica
+              se traduzca en mayor eficiencia, seguridad y competitividad.
             </p>
 
             <div className={styles.ctaRow}>
@@ -31,7 +30,7 @@ export function Hero() {
                 <a href="#servicios">Ver Servicios</a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="#contacto">Solicitar Consulta</a>
+                <a href="#contacto">Agendar reunion</a>
               </Button>
             </div>
           </div>

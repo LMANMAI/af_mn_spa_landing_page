@@ -11,7 +11,7 @@
   padding-right: 1rem;
 }
 
-.header {
+.headerMain {
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -26,7 +26,7 @@
   font-weight: 600;
 }
 
-.title {
+.titleMain {
   margin: 1rem 0 0.5rem;
   font-size: clamp(2rem, 2.8vw, 2.5rem);
   line-height: 1.2;
@@ -40,6 +40,7 @@
   color: #5b6b83;
   font-size: 1.125rem;
 }
+
 .grid {
   list-style: none;
   padding: 0;
@@ -97,6 +98,7 @@
   font-size: 0.975rem;
   line-height: 1.55;
 }
+
 .ctaRow {
   display: flex;
   justify-content: center;
@@ -116,11 +118,91 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
   text-decoration: none;
 }
-
 .ctaButton:hover {
   opacity: 0.95;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 .ctaButton:active {
   transform: translateY(1px);
+}
+
+.problemWrap {
+  margin: 1rem auto 1rem;
+  max-width: 72rem;
+  background: #f5f7fb;
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.problemHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.problemIcon {
+  width: 18px;
+  height: 18px;
+  color: #10b981;
+}
+
+.problemTitle {
+  margin: 0;
+  font-weight: 700;
+  color: #1f3b8a;
+}
+
+.problemList {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+  color: #264169;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.problemItem {
+  list-style: disc;
+}
+
+@media (min-width: 768px) {
+  .problemWrap {
+    padding: 14px 16px;
+  }
+  .problemList {
+    font-size: 1rem;
+  }
+}
+
+.problemCenter {
+  max-width: 72rem;
+  margin: 0 auto 1rem;
+  padding-top: 0.25rem;
+}
+
+.problemHeading {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  color: #1f3b8a;
+  font-size: clamp(2rem, 2.8vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.problemQs {
+  max-width: 56rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.problemQ {
+  margin: 0;
+  color: #264169;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }

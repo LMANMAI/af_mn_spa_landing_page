@@ -81,7 +81,7 @@ export function WorkModel() {
               aria-label="Agendar Consulta - ir a la sección de contacto"
               className={styles.ctaButton}
             >
-              Quiero aplicar este modelo
+              Contacto
             </a>
           </div>
         </div>

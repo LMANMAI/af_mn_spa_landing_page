@@ -20,7 +20,6 @@ export function Footer() {
               <li>Implementación de ERP/CRM</li>
               <li>Estrategia Tecnológica</li>
               <li>Automatización de Procesos</li>
-              <li>Ciberseguridad</li>
               <li>Capacitación Tecnológica</li>
             </ul>
           </div>

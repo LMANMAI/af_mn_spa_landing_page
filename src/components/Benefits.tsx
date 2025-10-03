@@ -4,6 +4,7 @@ import {
   Shield,
   Lightbulb,
   HeartHandshake,
+  AlertCircle,
 } from "lucide-react";
 import styles from "../styles/Benefits.module.css";
 
@@ -39,10 +40,33 @@ const benefits = [
 export function Benefits() {
   return (
     <section id="beneficios" className={styles.section}>
+      <div
+        className={styles.problemCenter}
+        aria-labelledby="intro-issues-title"
+      >
+        <h2 id="intro-issues-title" className={styles.problemHeading}>
+          ¿Te pasa que?
+        </h2>
+        <div className={styles.problemQs}>
+          <p className={styles.problemQ}>
+            Si sos PyME y estás evaluando un ERP o CRM, no sabés por dónde
+            empezar?
+          </p>
+          <p className={styles.problemQ}>
+            Si tu equipo pierde tiempo con procesos manuales, la productividad
+            se frena?
+          </p>
+          <p className={styles.problemQ}>
+            Si invertís en tecnología, no siempre obtenés los resultados que
+            esperabas?
+          </p>
+        </div>
+      </div>
+
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={styles.headerMain}>
           <span className={styles.badge}>Valor Agregado</span>
-          <h2 className={styles.title}>Beneficios para tu Empresa</h2>
+          <h2 className={styles.titleMain}>Beneficios para tu Empresa</h2>
           <p className={styles.lead}>
             Resultados concretos que transformarán la manera en que tu PyME
             opera y compite en el mercado.
@@ -53,7 +77,7 @@ export function Benefits() {
               aria-label="Agendar Consulta - ir a la sección de contacto"
               className={styles.ctaButton}
             >
-              Quiero estos beneficios en mi PyME
+              Agendar reunion
             </a>
           </div>
         </div>

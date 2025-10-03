@@ -40,7 +40,7 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Ciberseguridad y Protección de Datos",
+    title: "rotección de Datos",
     description: "Evaluación de vulnerabilidades y riesgos.",
     points: [
       "Desarrollo de políticas de seguridad informática",
@@ -102,14 +102,13 @@ export function Services() {
             equipo ganen tiempo.
           </p>
 
-          {/* CTA a #contacto */}
           <div className={styles.ctaRow}>
             <a
               href="#contacto"
               aria-label="Agendar Consulta - ir a la sección de contacto"
               className={styles.ctaButton}
             >
-              Solicitar propuesta
+              Contacto
             </a>
           </div>
 

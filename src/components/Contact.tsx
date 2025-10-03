@@ -108,12 +108,6 @@ export function Contact() {
                   </div>
                 </div>
               </div>
-
-              <div className={styles.divider}>
-                <p className={styles.smallMuted}>
-                  Respuesta garantizada en menos de 24 horas
-                </p>
-              </div>
             </CardContent>
           </Card>
         </div>
