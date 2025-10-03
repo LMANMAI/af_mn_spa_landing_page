@@ -20,7 +20,7 @@ export function Contact() {
           <Badge variant="secondary" className={styles.badge}>
             Conectemos
           </Badge>
-          <h2 className={styles.title}>¿Listo para Transformar su PyME?</h2>
+          <h2 className={styles.title}>¿Listo para Transformar tu PyME?</h2>
           <p className={styles.lead}>
             Demos el primer paso juntos para identificar sus necesidades
             tecnológicas y diseñar un plan a medida para su empresa.
