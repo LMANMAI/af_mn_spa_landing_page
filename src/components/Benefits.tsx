@@ -39,69 +39,73 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className={styles.section}>
-      <div
-        className={styles.problemCenter}
-        aria-labelledby="intro-issues-title"
-      >
-        <h1 className={styles.heroTitle}>
-          <span className={styles.heroTitleMain}>Transformación Digital</span>{" "}
-          <span className={styles.heroTitleChip}>para tu</span>{" "}
-          <span className={styles.heroTitleEmph}>PyME</span>
-        </h1>
-        <h2 id="intro-issues-title" className={styles.problemHeading}>
-          ¿Te pasa que...
-        </h2>
-        <div className={styles.problemQs}>
-          <p className={styles.problemQ}>
-            ...Si sos PyME y estás evaluando un ERP o CRM, no sabés por dónde
-            empezar?
-          </p>
-          <p className={styles.problemQ}>
-            ...Si tu equipo pierde tiempo con procesos manuales, la
-            productividad se frena?
-          </p>
-          <p className={styles.problemQ}>
-            ...Si invertís en tecnología, no siempre obtenés los resultados que
-            esperabas?
-          </p>
-        </div>
-      </div>
-
-      <div className={styles.container}>
-        <div className={styles.headerMain}>
-          <span className={styles.badge}>Valor Agregado</span>
-          <h2 className={styles.titleMain}>Beneficios para tu Empresa</h2>
-          <p className={styles.lead}>
-            Resultados concretos que transformarán la manera en que tu PyME
-            opera y compite en el mercado.
-          </p>
-          <div className={styles.ctaRow}>
-            <a
-              href="#contacto"
-              aria-label="Agendar Consulta - ir a la sección de contacto"
-              className={styles.ctaButton}
-            >
-              Agendar reunión
-            </a>
+    <>
+      <section id="home" className={styles.section}>
+        <div
+          className={styles.problemCenter}
+          aria-labelledby="intro-issues-title"
+        >
+          <h1 className={styles.heroTitle}>
+            <span className={styles.heroTitleMain}>
+              Transformación digital para tu
+            </span>{" "}
+            <span className={styles.heroTitleEmph}>PyME</span>
+          </h1>
+          <h2 id="intro-issues-title" className={styles.problemHeading}>
+            ¿Te pasa que...
+          </h2>
+          <div className={styles.problemQs}>
+            <p className={styles.problemQ}>
+              ...Si sos PyME y estás evaluando un ERP o CRM, no sabés por dónde
+              empezar?
+            </p>
+            <p className={styles.problemQ}>
+              ...Si tu equipo pierde tiempo con procesos manuales, la
+              productividad se frena?
+            </p>
+            <p className={styles.problemQ}>
+              ...Si invertís en tecnología, no siempre obtenés los resultados
+              que esperabas?
+            </p>
           </div>
         </div>
+      </section>
+      <section id="beneficios" className={styles.anchorOffset}>
+        <div className={styles.container}>
+          <div className={styles.headerMain}>
+            <span className={styles.badge}>Valor Agregado</span>
+            <h2 className={styles.titleMain}>Beneficios para tu Empresa</h2>
+            <p className={styles.lead}>
+              Resultados concretos que transformarán la manera en que tu PyME
+              opera y compite en el mercado.
+            </p>
+            <div className={styles.ctaRow}>
+              <a
+                href="#contacto"
+                aria-label="Agendar Consulta - ir a la sección de contacto"
+                className={styles.ctaButton}
+              >
+                Agendar reunión
+              </a>
+            </div>
+          </div>
 
-        <ul className={styles.grid}>
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <li key={index} className={styles.card}>
-                <div className={styles.iconBox}>
-                  <Icon size={32} />
-                </div>
-                <h3 className={styles.cardTitle}>{benefit.title}</h3>
-                <p className={styles.cardDesc}>{benefit.description}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </section>
+          <ul className={styles.grid}>
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <li key={index} className={styles.card}>
+                  <div className={styles.iconBox}>
+                    <Icon size={32} />
+                  </div>
+                  <h3 className={styles.cardTitle}>{benefit.title}</h3>
+                  <p className={styles.cardDesc}>{benefit.description}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }

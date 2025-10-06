@@ -234,3 +234,7 @@
   color: #10b981;
   font-weight: 900;
 }
+
+.anchorOffset {
+  scroll-margin-top: var(--nav-offset, 88px);
+}

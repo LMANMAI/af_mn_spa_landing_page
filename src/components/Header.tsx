@@ -24,7 +24,7 @@ export function Header() {
         </div>
 
         <nav className={styles.nav}>
-          <a href="#beneficios" className={styles.navLink}>
+          <a href="#home" className={styles.navLink}>
             Inicio
           </a>
           <a href="#beneficios" className={styles.navLink}>
