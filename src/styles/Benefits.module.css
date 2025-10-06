@@ -205,4 +205,32 @@
   color: #264169;
   font-size: 1.05rem;
   line-height: 1.6;
+  font-weight: bold;
+}
+
+.heroTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  margin: 0 0 0.75rem;
+}
+
+.heroTitleMain {
+  color: #1f3b8a;
+}
+
+.heroTitleChip {
+  display: inline-block;
+  padding: 0.05em 0.35em;
+  border: 2px solid #1f3b8a;
+  border-radius: 0.4rem;
+  color: #1f3b8a;
+  background: #ffffff;
+}
+
+.heroTitleEmph {
+  color: #10b981;
+  font-weight: 900;
 }

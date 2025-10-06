@@ -11,7 +11,7 @@ export function WorkModel() {
           <p className={styles.lead}>
             Escucho tus necesidades, detecto los puntos críticos y diseño un
             plan claro y a tu medida para convertirlos en oportunidades. Con un
-            enfoque flexible y transparente adaptado a la realidad de cada PyME.
+            enfoque flexible y transparente adaptado a la realidad de tu PyME.
           </p>
         </div>
 
@@ -28,8 +28,8 @@ export function WorkModel() {
 
             <div className={styles.cardBody}>
               <p className={styles.centerText}>
-                El esquema de servicios se adapta a la realidad de cada PyME,
-                con un
+                El esquema de servicios se adapta a la realidad de tu PyME, con
+                un
                 <strong className={styles.emph}>
                   {" "}
                   modelo flexible y transparente

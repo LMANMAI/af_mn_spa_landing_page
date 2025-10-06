@@ -29,9 +29,10 @@ export function AboutMe() {
               estoy convencido de que la tecnología sola no alcanza: el
               verdadero cambio se logra con escucha activa, confianza y equipos
               comprometidos. Con mi proyecto{" "}
-              <strong style={{ color: "#17367f" }}>Para PyMEs</strong>, acompaño
-              a dueños y responsables de pequeñas y medianas empresas a ordenar
-              su gestión y crecer con claridad. Mi enfoque se basa en cercanía,
+              <strong style={{ color: "#17367f" }}>Para</strong>
+              <strong style={{ color: "#67b246" }}> PyMEs</strong>, acompaño a
+              dueños y responsables de pequeñas y medianas empresas a ordenar su
+              gestión y crecer con claridad. Mi enfoque se basa en cercanía,
               practicidad, accesibilidad y transparencia, con un propósito
               claro:{" "}
               <strong style={{ color: "#17367f" }}>

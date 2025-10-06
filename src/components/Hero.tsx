@@ -10,7 +10,7 @@ export function Hero() {
         <div className={styles.grid}>
           <div className={styles.textCol}>
             <h1 className={styles.title}>
-              Transformación Digital para tu{" "}
+              Innovación Digital para tu{" "}
               <span className={styles.titleEm}>PyME</span>
             </h1>
 
@@ -19,10 +19,10 @@ export function Hero() {
             </p>
 
             <p className={styles.body}>
-              Mi objetivo es acompañar a tu empresa y tu equipo a su
-              organización en la selección, implementación y optimización de
-              herramientas de gestión, asegurando que la inversión tecnológica
-              se traduzca en mayor eficiencia, seguridad y competitividad.
+              Mi objetivo es acompañar a tu empresa y tu equipo en la selección,
+              implementación y optimización de herramientas de gestión,
+              asegurando que la inversión tecnológica se traduzca en mayor
+              eficiencia, seguridad y competitividad.
             </p>
 
             <div className={styles.ctaRow}>
@@ -30,7 +30,7 @@ export function Hero() {
                 <a href="#servicios">Ver Servicios</a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="#contacto">Agendar reunion</a>
+                <a href="#contacto">Agendar reunión</a>
               </Button>
             </div>
           </div>

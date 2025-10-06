@@ -139,13 +139,13 @@
 }
 .edgeLeft {
   left: 0;
-  background: linear-gradient(to right, #f8fafc, rgba(248, 250, 252, 0));
+  /* background: linear-gradient(to right, #f8fafc, rgba(248, 250, 252, 0)); */
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
 .edgeRight {
   right: 0;
-  background: linear-gradient(to left, #f8fafc, rgba(248, 250, 252, 0));
+  /* background: linear-gradient(to left, #f8fafc, rgba(248, 250, 252, 0)); */
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 }

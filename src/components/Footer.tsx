@@ -21,6 +21,7 @@ export function Footer() {
               <li>Estrategia Tecnológica</li>
               <li>Automatización de Procesos</li>
               <li>Capacitación Tecnológica</li>
+              <li>Protección de Datos</li>
             </ul>
           </div>
 

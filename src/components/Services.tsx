@@ -40,7 +40,7 @@ const services = [
   },
   {
     icon: Shield,
-    title: "rotección de Datos",
+    title: "Protección de Datos",
     description: "Evaluación de vulnerabilidades y riesgos.",
     points: [
       "Desarrollo de políticas de seguridad informática",
@@ -95,8 +95,8 @@ export function Services() {
     <section id="servicios" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.badge}>Servicios Especializados</span>
-          <h2 className={styles.title}>Soluciones Tecnológicas Integrales</h2>
+          <span className={styles.badge}>Servicios</span>
+          <h2 className={styles.title}>Soluciones Tecnológicas</h2>
           <p className={styles.lead}>
             Asesoría tecnológica diseñada específicamente para que tu PyME y tu
             equipo ganen tiempo.

@@ -44,20 +44,25 @@ export function Benefits() {
         className={styles.problemCenter}
         aria-labelledby="intro-issues-title"
       >
+        <h1 className={styles.heroTitle}>
+          <span className={styles.heroTitleMain}>Transformación Digital</span>{" "}
+          <span className={styles.heroTitleChip}>para tu</span>{" "}
+          <span className={styles.heroTitleEmph}>PyME</span>
+        </h1>
         <h2 id="intro-issues-title" className={styles.problemHeading}>
-          ¿Te pasa que?
+          ¿Te pasa que...
         </h2>
         <div className={styles.problemQs}>
           <p className={styles.problemQ}>
-            Si sos PyME y estás evaluando un ERP o CRM, no sabés por dónde
+            ...Si sos PyME y estás evaluando un ERP o CRM, no sabés por dónde
             empezar?
           </p>
           <p className={styles.problemQ}>
-            Si tu equipo pierde tiempo con procesos manuales, la productividad
-            se frena?
+            ...Si tu equipo pierde tiempo con procesos manuales, la
+            productividad se frena?
           </p>
           <p className={styles.problemQ}>
-            Si invertís en tecnología, no siempre obtenés los resultados que
+            ...Si invertís en tecnología, no siempre obtenés los resultados que
             esperabas?
           </p>
         </div>
@@ -77,7 +82,7 @@ export function Benefits() {
               aria-label="Agendar Consulta - ir a la sección de contacto"
               className={styles.ctaButton}
             >
-              Agendar reunion
+              Agendar reunión
             </a>
           </div>
         </div>

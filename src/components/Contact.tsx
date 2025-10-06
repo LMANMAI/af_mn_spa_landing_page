@@ -32,7 +32,7 @@ export function Contact() {
             <CardHeader>
               <CardTitle className={styles.cardTitle}>
                 <MessageCircle size={20} className={styles.titleIcon} />
-                <span>Agende una Reunión de Diagnóstico</span>
+                <span>Agendá una Reunión de Relevamiento</span>
               </CardTitle>
             </CardHeader>
             <CardContent className={styles.cardBody}>
@@ -49,7 +49,7 @@ export function Contact() {
                   aria-label="Abrir agenda en Google Calendar"
                 >
                   <Calendar size={16} className={styles.btnIcon} />
-                  Agendar Consulta
+                  Agendar reunión
                 </a>
               </Button>
 
