@@ -78,7 +78,7 @@ export function Contact() {
                     <p className={styles.smallMuted}>Email</p>
                     <p>
                       <a
-                        href="mailto:alfredo.mana@consultech.com"
+                        href="mailto:alfredomana@gmail.com"
                         className={styles.link}
                       >
                         alfredomana@gmail.com
