@@ -12,7 +12,7 @@ const benefits = [
   {
     icon: Lightbulb,
     title: "Innovación y actualización constante",
-    description: "Manténgase competitivo frente a los cambios del mercado",
+    description: "Mantente competitivo frente a los cambios del mercado",
   },
   {
     icon: TrendingUp,

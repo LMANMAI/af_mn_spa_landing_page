@@ -26,10 +26,10 @@ export function Hero() {
             </p>
 
             <div className={styles.ctaRow}>
-              <Button className={styles.btnPrimary} size="lg" asChild>
+              <Button variant="outline" size="lg" asChild>
                 <a href="#servicios">Ver Servicios</a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button className={styles.btnPrimary} size="lg" asChild>
                 <a href="#contacto">Agendar reunión</a>
               </Button>
             </div>

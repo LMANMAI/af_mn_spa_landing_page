@@ -1,5 +1,6 @@
 import styles from "../styles/Footer.module.css";
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaSpotify } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Footer() {
   return (
@@ -72,13 +73,24 @@ export function Footer() {
                   Spotify
                 </a>
               </li>
+              <li>
+                <a
+                  className={styles.socialLink}
+                  href="https://x.com/alfredomanaok?t=cZuKLjsj6b18n2gxdlt2WQ&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter className={styles.socialIcon} />
+                  Twitter
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <p className={styles.finePrint}>
-            © 2024 Alfredo Mana - Asesoría Tecnológica. Todos los derechos
+            © 2025 Alfredo Mana - Asesoría Tecnológica. Todos los derechos
             reservados.
           </p>
         </div>
